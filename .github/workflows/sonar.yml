@@ -1,8 +1,8 @@
 name: Sonar Scan
 on:
-  push:
-    branches:
-      - 2022
+  # push:
+  #  branches:
+  #    - 2022
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
