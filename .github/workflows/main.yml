@@ -225,6 +225,7 @@ jobs:
         asset_name: resp-${{ env.VERSION }}.zip
         asset_content_type: application/zip
   build_on_osx:
+    if: "contains(github.event.commits[0].message, '[build osx]')"
     needs: create_release
     runs-on: macos-latest
 
