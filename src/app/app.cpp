@@ -373,7 +373,7 @@ void Application::processCmdArgs() {
   QCommandLineOption settingsDir("settings-dir",
                                  "(Optional) Directory where RESP.app looks/saves "
                                  ".rdm directory with connections.json file",
-                                 "settingsDir", QDir::homePath());
+                                 "settingsDir", QCoreApplication::applicationDirPath());
   QCommandLineOption formattersDir(
       "formatters-dir",
       "(Optional) Directory where RESP.app looks for native value formatters",
