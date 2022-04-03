@@ -200,8 +200,8 @@ jobs:
       uses: TheDoctor0/zip-release@0.6.1
       with:
         filename: resp-${{ env.VERSION }}.zip
-        path: ../
-        directory: ./rdm/build/windows/installer/resources
+        directory: ./rdm/build/windows/installer
+        path: ./resources
     - name: Upload Release Asset
       id: upload-release-asset 
       uses: actions/upload-release-asset@v1
